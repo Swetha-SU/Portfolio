@@ -144,6 +144,12 @@ section{
     padding-top: 20%;
     font-size: 13px;
 }
+.description{
+    display:flex ;
+    justify-content: center;
+    gap: 20px;
+}
+
 @media(max-width:900px) {
     nav{
         justify-content: space-between;
