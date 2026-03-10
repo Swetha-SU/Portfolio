@@ -1,0 +1,185 @@
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    
+}
+nav{
+    background-color:black;
+    height: 2rem; 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 8;
+    
+
+}
+.logo{
+color: white;
+height:45px;
+font-weight: bold;
+}
+ .page a{
+    color: white;
+   text-decoration: none;
+   font-weight: bold;
+   padding-left: 10px;
+   padding-top: 10px;
+   /* position: sticky; */
+   
+} 
+#toggle,.hamburger{
+    display: none;
+}
+
+
+#home{
+ background-color: rgb(208, 218, 208);
+    height: 600px;
+     padding-left: 5%; 
+     padding-top: 5%; 
+
+}
+img{
+    border: 1px soild black;
+    height:50%;
+    border-radius: 40%;
+     position: relative;
+    top:10%; 
+}
+section{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 45%;
+    position: relative;
+    bottom: 20%;
+     padding-top: 40px;
+}
+
+ aside{
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+ padding-left: 45%;
+  position: relative;
+    bottom: 20%;
+
+}
+#home  p{
+    color:black ;
+    font-size: 15px;
+    padding-left: 45%;
+     position: relative;
+    bottom: 20%;
+}
+
+#about{
+    background-color:  rgb(216, 216, 190);
+    height: 600px;
+     padding-left:5%; 
+    padding-top: 10%;
+}
+#about p{
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  
+}
+.about1 {
+    padding-top: 10px;
+    font-size: 15px;
+}
+#skills{
+    background-color:  rgb(208, 218, 208);
+    padding-left: 5%;
+    padding-top:5% ;
+    height:100vh;
+    
+}
+.soft,.hard h4{
+    padding-left: 10%;
+}
+.soft p{
+    padding-left: 10%;
+}
+.hard p{
+     padding-left: 20%;
+}
+#projects{
+    height:100vh;
+    background-color:  rgb(216, 216, 190);
+}
+#projects img{
+    height:200%;
+    width:90%;
+    margin-left:5%;
+    /* margin-top: 25%; */ 
+    border-radius: 10px;
+}
+
+#contact{
+    background-color:  rgb(208, 218, 208);
+    height: 600px;
+    padding: 10%;
+}
+.add{
+    padding-left: 10%;
+    padding-top: 2%;
+}
+ .email,.phone,.location{
+    padding-top: 10px;
+}
+.email:hover{
+    text-decoration: underline;
+    color: rgb(75, 75, 209)
+}
+.para {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: 20%;
+    font-size: 13px;
+}
+@media(max-width:900px) {
+    nav{
+        justify-content: space-between;
+    
+    }
+    .hamburger{
+        display: block;
+        font-size: 30px;
+        color:white;
+        cursor: pointer
+}
+.page{
+    display: none;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-color: aqua;
+    flex-direction: column;
+    padding: 20px;
+}
+#skills{
+   height:60vh;
+}
+#projects{
+    height: 50vh;
+}
+#contact{
+    height: 50vh;
+}
+#home img{
+    height: 30%;
+}
+#home section aside p{
+    padding-right: 10px;
+}
+ #toggle:checked~.page{
+        display: flex;
+    }
+}
